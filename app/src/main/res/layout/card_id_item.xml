@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <TextView
+            android:id="@+id/itemNumber"
+            android:layout_width="40dp"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:text="0"/>
+
+        <TextView
+            android:layout_toRightOf="@+id/itemNumber"
+            android:id="@+id/itemYear"
+            android:layout_width="60dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="0000"/>
+        <TextView
+            android:layout_toRightOf="@+id/itemYear"
+            android:id="@+id/itemValue"
+            android:layout_width="150dp"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_height="wrap_content"
+            android:text="10000000.00"/>
+
+
+        <LinearLayout
+            android:layout_toRightOf="@id/itemValue"
+            android:layout_marginLeft="4dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:id="@+id/editButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_edit_black_24dp"/>
+
+            <ImageButton
+                android:id="@+id/deleteButton"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/editButton"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:padding="0dp"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:backgroundTint="@android:color/transparent"
+                android:src="@drawable/ic_delete_black_24dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

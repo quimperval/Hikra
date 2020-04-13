@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_alignParentTop="true"
+            android:id="@+id/projectTitleList"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginEnd="2dp"
+            android:gravity="left|center_vertical"
+            android:layout_toLeftOf="@id/lastUpdateTitleList"
+            android:minHeight="24dp"
+            android:text="Project Name"
+            android:textSize="24dp"
+            />
+
+        <TextView
+            android:id="@+id/lastUpdateTitleList"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:gravity="left|center_vertical"
+            android:text="Last Update"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:textSize="18sp"
+            />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/separator1"
+        android:background="@color/azul_perval"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="12dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+
+            android:layout_alignParentLeft="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:id="@+id/tvProjItemName"
+            android:text="project"
+
+            android:gravity="left|center_vertical"
+            android:textSize="20sp"
+            android:layout_toLeftOf="@id/tvlastUpdate"
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:layout_alignBottom="@id/tvlastUpdate"/>
+
+
+        <TextView
+
+            android:id="@+id/tvlastUpdate"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:gravity="center"
+            android:text="lastUpdate"
+            android:layout_width="90dp"
+            android:layout_height="60dp"
+            android:textSize="14sp"
+            />
+
+
+    </RelativeLayout>
+
+
+
+
+    <TextView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/azul_perval"
+        android:backgroundTint="@color/azul_perval"/>
+
+</LinearLayout>

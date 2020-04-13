@@ -1,0 +1,38 @@
+<resources>
+
+    <style name="AppTheme.NoActionBar" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColor">@color/azul_perval</item>
+        <item name="colorPrimary">@color/azul_perval</item>
+        <item name="colorPrimaryDark">@color/azul_perval2</item>
+        <item name="colorAccent">@color/Fondo_gris</item>
+    </style>
+
+    <style name="CustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">@color/white</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textAllCaps">true</item>
+        <item name="android:textColorSecondary">@color/white</item>
+
+    </style>
+    <style name="WhiteAccent">
+        <item name="colorAccent">@color/azul_perval</item> <!-- Whatever color you want-->
+        <item name="colorPrimary">@color/azul_perval</item>
+        <item name="colorPrimaryDark">@color/azul_perval2</item>
+    </style>
+
+    <style name="CustomSpinner" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:textColorSecondary">@android:color/white</item>
+        <item name="android:textColor">@color/azul_perval</item>
+        <item name="colorPrimary">@color/azul_perval</item>
+        <item name="colorPrimaryDark">@color/azul_perval2</item>
+        <item name="colorAccent">@color/azul_perval</item>
+        <item name="android:colorControlNormal">@color/azul_perval</item>
+    </style>
+
+</resources>

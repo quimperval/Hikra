@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/TVBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Basic Statistics"
+                android:textSize="20dp"
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+
+                tools:text="Basic Statistics" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/FormBasic"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"></io.github.kexanie.library.MathView>
+
+
+
+            <TextView
+                android:id="@+id/TVNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Normal"
+                android:textSize="20dp"
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                 />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/FormNormal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/paramNormal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters MOM/MML"
+                android:textSize="16dp" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramNormal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVLogN2PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="LogNormal 2P"
+                android:textSize="20dp"
+
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                app:layout_constraintTop_toBottomOf="@+id/FormBasic"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+
+                />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_LN2P"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/ParamLN2PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Parameters estimated with the Method of Moments"
+                android:textSize="16dp"
+                tools:text="Parameters estimated with the Method of Moments" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramLN2PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam"></io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/paramLN2PML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Maximum Likelihood"
+                android:textSize="16dp" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramLN2PML"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+
+
+            <TextView
+                android:id="@+id/TVLogN3P"
+
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="LogNormal 3P"
+                android:textSize="20dp"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/FormBasic"
+
+                />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_LN3P"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamLN3PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Moments"
+                android:textSize="16dp"
+                tools:text="Parameters estimated with the Method of Moments" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramLN3PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam"></io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamLN3PML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Maximum Likelihood"
+                android:textSize="16dp" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramLN3PML"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+
+
+            <TextView
+                android:id="@+id/TVGumbel"
+
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gumbel"
+                android:textSize="20dp"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/FormBasic"
+
+                />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_Gumbel"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamGumbelMOM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Moments"
+                android:textSize="16dp"
+                tools:text="Parameters estimated with the Method of Moments" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramGumbelMOM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam"></io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamGumbelML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Maximum Likelihood"
+                android:textSize="16dp" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramGumbelML"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+
+
+            <TextView
+                android:id="@+id/TVEXP"
+
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Exponential"
+                android:textSize="20dp"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/FormBasic"
+
+                />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_EXP"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamEXPMOM2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Moments"
+                android:textSize="16dp"
+                tools:text="Parameters estimated with the Method of Moments" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramEXPMOM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam"></io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamEXPML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Maximum Likelihood"
+                android:textSize="16dp" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramEXPML"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+
+
+            <TextView
+                android:id="@+id/TVG2P"
+
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gamma 2P"
+                android:textSize="20dp"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/FormBasic"
+
+                />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_G2P"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamG2PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Moments"
+                android:textSize="16dp"
+                tools:text="Parameters estimated with the Method of Moments" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramG2PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam"></io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamG2PML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Maximum Likelihood"
+                android:textSize="16dp" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramG2PML"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+
+
+            <TextView
+                android:id="@+id/TVG3P"
+
+                android:background="@color/row_odd"
+                android:backgroundTint="@color/row_odd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Gamma 3P"
+                android:textSize="20dp"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/FormBasic"
+
+                />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_G3P"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamG3PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Moments"
+                android:textSize="16dp"
+                tools:text="Parameters estimated with the Method of Moments" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramG3PMOM"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam"></io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVparamG3PML"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Parameters estimated with the Method of Maximum Likelihood"
+                android:textSize="16dp" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/form_paramG3PML"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                auto:engine="KaTeX"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintHorizontal_bias="0.0"
+                auto:layout_constraintStart_toStartOf="parent"
+                auto:layout_constraintTop_toBottomOf="@+id/TVParam">
+
+            </io.github.kexanie.library.MathView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>

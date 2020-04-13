@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:auto="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tvErrorsTitle"
+        android:text="Errors Summary"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"/>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_marginTop="3dp"
+        android:layout_below="@+id/tvErrorsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:text="Method of Moments"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+         <LinearLayout
+             android:id="@+id/lLayoutSummaryResMOM"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+             android:minWidth="48dp"
+             android:gravity="center"
+             android:minHeight="48dp"
+             android:orientation="vertical"
+             android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="6dp"
+                android:text="Method of Maximum Likelihood"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <LinearLayout
+                android:id="@+id/lLayoutSummaryResMLH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:minWidth="48dp"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_horizontal"/>
+
+            <TextView
+                android:id="@+id/TVErrors2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/adView" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/FormBasic"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVErrors2"
+                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+
+            <TextView
+                android:id="@+id/TVParam"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="TextView"
+                app:layout_constraintTop_toBottomOf="@+id/FormBasic"
+                auto:layout_constraintEnd_toEndOf="parent"
+                auto:layout_constraintStart_toStartOf="parent" />
+
+            <io.github.kexanie.library.MathView
+                android:id="@+id/formula_two"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/TVParam"
+                auto:engine="KaTeX"></io.github.kexanie.library.MathView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</RelativeLayout>
